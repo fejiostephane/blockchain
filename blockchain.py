@@ -108,3 +108,29 @@ blockchain.add_block({
     "Lieu de naissance": "Marseille",
     "Nom des parents": "Bernard André et Bernard Claire"
 })
+
+# Affichage de tous les blocs en format JSON
+#print("Affichage de tous les blocs dans la blockchain (format JSON):")
+#print(blockchain.to_json())
+##mais je prefere afficher des blocs specifiques pour plus de fun 
+
+# Vérification de la validité de la chaîne
+print("Blockchain valid:", blockchain.is_chain_valid())
+
+# Récupération de blocs spécifiques en format JSON
+
+#bloc a lindex 0 afficher
+print("Bloc à l'index 0 (format JSON):")
+print(json.dumps(blockchain.get_block(0)._dict_, sort_keys=True, indent=4))
+
+#bloc a lindex 1 afficher
+print("Bloc à l'index 1 (format JSON):")
+print(json.dumps(blockchain.get_block(1)._dict_, sort_keys=True, indent=4))
+
+#bloc a lindex 2 afficher
+print("Bloc à l'index 2 (format JSON):")
+print(json.dumps(blockchain.get_block(2)._dict_, sort_keys=True, indent=4))
+
+#bloc a lindex 3 afficher
+print("Bloc à l'index 3 (format JSON):")
+print(json.dumps(blockchain.get_block(3)._dict_, sort_keys=True, indent=4))
