@@ -121,16 +121,16 @@ print("Blockchain valid:", blockchain.is_chain_valid())
 
 #bloc a lindex 0 afficher
 print("Bloc à l'index 0 (format JSON):")
-print(json.dumps(blockchain.get_block(0)._dict_, sort_keys=True, indent=4))
+print(json.dumps(blockchain.get_block(0).__dict__, sort_keys=True, indent=4))
 
 #bloc a lindex 1 afficher
 print("Bloc à l'index 1 (format JSON):")
-print(json.dumps(blockchain.get_block(1)._dict_, sort_keys=True, indent=4))
+print(json.dumps(blockchain.get_block(1).__dict__, sort_keys=True, indent=4))
 
 #bloc a lindex 2 afficher
 print("Bloc à l'index 2 (format JSON):")
-print(json.dumps(blockchain.get_block(2)._dict_, sort_keys=True, indent=4))
+print(json.dumps(blockchain.get_block(2).__dict__, sort_keys=True, indent=4))
 
 #bloc a lindex 3 afficher
 print("Bloc à l'index 3 (format JSON):")
-print(json.dumps(blockchain.get_block(3)._dict_, sort_keys=True, indent=4))
+print(json.dumps(blockchain.get_block(3).__dict__, sort_keys=True, indent=4))
