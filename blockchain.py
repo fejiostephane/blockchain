@@ -26,7 +26,7 @@ class Block:
         return json.dumps(self._dict_, sort_keys=True, indent=4)
 
     # la methode _repr_ pour fournir une représentation textuelle du bloc
-    def _repr_(self):
+    def __repr__(self):
         return f"Block(index={self.index}, timestamp={self.timestamp}, data={self.data}, previous_hash={self.previous_hash}, hash={self.hash})"
     
      #creer un constructeur de la classe Blockchain. Initialiser la chaîne avec le bloc genesis((bloc 0) en appelant create_genesis_block().
