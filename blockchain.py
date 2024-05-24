@@ -7,7 +7,7 @@ import json
   #Initialise index, timestamp,data,Previous_hash qui sont les attributs du bloc, et le constructeur calul le haschage en appelant calculate_hash
 
 class Block:
-    def _init_(self, index, timestamp, data, previous_hash):
+    def __init__(self, index, timestamp, data, previous_hash):
         self.index = index
         self.timestamp = timestamp
         self.data = data
